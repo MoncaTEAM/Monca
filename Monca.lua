@@ -4,29 +4,14 @@
 --                 - Monca -                  --
 --         -- https://t.me/I88I99 --          --
 ------------------------------------------------ 
-LibsNumber = 0
-for v in io.popen('ls libs'):lines() do
-if v:match(".lua$") then
-LibsNumber = LibsNumber + 1
-end
-end
-if LibsNumber ~= 0 then
+HTTPS = require ("ssl.https") 
+https = require ("ssl.https") 
+http  = require ("socket.http") 
 URL = dofile("./libs/url.lua")
 json = dofile("./libs/JSON.lua")
 JSON = dofile("./libs/dkjson.lua")
 serpent = dofile("./libs/serpent.lua")
 DevAbs = dofile("./libs/redis.lua").connect("127.0.0.1", 6379)
-else 
-redis = require('redis') 
-URL = require('socket.url') 
-serpent = require("serpent") 
-json = dofile('./JSON.lua') 
-JSON = dofile('./dkjson.lua') 
-DevAbs = redis.connect('127.0.0.1', 6379)
-end
-HTTPS = require ("ssl.https") 
-https = require ("ssl.https") 
-http  = require ("socket.http") 
 User = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '')
 ServerMonca = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a') 
 Ip = io.popen("dig +short myip.opendns.com @resolver1.opendns.com"):read('*a'):gsub('[\n\r]+', '')
