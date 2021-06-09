@@ -3697,11 +3697,11 @@ Welcome To Source
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙[Source Channel](https://t.me/I88I99)
 
-⌁︙[Exp Source](https://t.me/Exp_Dev)
+⌁︙[Exp Source](https://t.me/monca0)
 
 ⌁︙[Developer](https://t.me/rr22rrr)
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[Tws Monca](https://t.me/IQA_bot)
+⌁︙[Tws Monca](https://t.me/ss77ssbot)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
